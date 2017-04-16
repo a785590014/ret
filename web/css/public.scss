@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Microsoft Yahei';
+}
+
+a{
+    text-decoration: none;
+}
+
+@mixin font($font,$color: #333){
+    font-size: $font;
+    color: $color;
+}
+
+@mixin format($height){
+    line-height: $height;
+    text-align: center;
+}
+
+@mixin w_h_b($width,$height,$background){
+    width: $width;
+    height: $height;
+    background: $background;
+}

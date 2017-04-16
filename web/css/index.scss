@@ -1,0 +1,323 @@
+@import 'public.scss';
+
+.title{
+    @include w_h_b(100%,68px,#f6f6f6);
+    box-shadow: 1px 1px 2px 2px #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    .title-son{
+        width: 1200px;
+        margin: 0 auto;
+        .logo{
+            margin-top: 10px;
+            float: left;
+        }
+        .menu-per{
+            .select{
+                margin: 25px 0 0 28px;
+                float: left;
+                margin-right: 4px;
+                cursor: pointer;
+            }
+            .triangle{
+                height: 0;
+                width: 0;
+                float: left;
+                margin: 35px 23px 0 0;
+                border-top: 4px solid #ec6c00;
+                border-right: 4px solid transparent;
+                border-left: 4px solid transparent;
+                cursor: pointer;
+            }
+            .menu{
+                width: 200px;
+                position: relative;
+                left: 140px;
+                top: 68px;
+                display: none;
+                .triangle1{
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    top: -4px;
+                    left: 20px;
+                    border-bottom: 5px solid #ccc;
+                    border-right: 5px solid transparent;
+                    border-left: 5px solid transparent;
+                    z-index: 1;
+                }
+                .cont{
+                    position: absolute;
+                    top: 0;
+                    height: 100px;
+                    width: 200px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    background: #fff;
+                }
+                .triangle2{
+                    @extend .triangle1;
+                    left: 22px;
+                    border-bottom: 5px solid #fff;
+                    border-right: 4px solid transparent;
+                    border-left: 4px solid transparent;
+                    z-index: 2;
+                }
+            }
+        }
+        .gps{
+            line-height: 68px;
+            float: left;
+            a{
+                @include font(16px);
+                margin-left: 50px;
+            }
+        }
+        .gps-right{
+            line-height: 68px;
+            float: right;
+            color: #d2d2d2;
+            font-size: 18px;
+            .left{
+                float: left;
+                a{
+                    @include font(14px);
+                }
+                span{
+                    text-align: center;
+                    width: 30px;
+                    height: 20px;
+                    font-family: 'iconfont';
+                    @include font(40px,#ec6c00);
+                    display: block;
+                    float: left;
+                }
+            }
+        }
+    }
+}
+
+.info{
+    height: 70px;
+    width: 100%;
+}
+
+.body{
+    width: 1200px;
+    margin: 0 auto;
+    .site{
+        line-height: 53px;
+        @include font(14px,#666666);
+        a{
+            @include font(14px,#666666);
+        }
+    }
+    .con{
+        height: 638px;
+        .left{
+            width: 258px;
+            height: 380px;
+            float: left;
+            .left-son{
+                background: #f7f7f7;
+                border: 1px solid #ddd;
+                h1{
+                    @include font(14px);
+                    line-height: 38px;
+                    margin-left: 30px;
+                }
+            }
+            .left-son1{
+                border-left: 1px solid #ddd;
+                border-right: 1px solid #ddd;
+                a{
+                    display: block;
+                    @include font(14px);
+                    line-height: 30px;
+                    margin-left: 30px;
+                }
+            }
+            .left-son1.bor{
+                border-bottom: 1px solid #ddd;
+            }
+        }
+        .right{
+            width: 780px;
+            margin-left: 20px;
+            float: left;
+            .mes{
+                @include w_h_b(780px,36px,#ccc);
+                margin-bottom: 34px;
+                position: relative;
+                .numer{
+                    @include format(36px);
+                    width: 250px;
+                    background: #ec6c00;
+                    @include font(14px,#fff);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .num-tran{
+                    border-top: 18px solid transparent;
+                    border-bottom: 18px solid transparent;
+                    border-left: 18px solid #ec6c00;
+                    position: absolute;
+                    top: 0;
+                    left: 250px;
+                    z-index: 3;
+                }
+                .num-tran2{
+                    border-top: 22px solid transparent;
+                    border-bottom: 22px solid transparent;
+                    border-left: 22px solid #fff;
+                    position: absolute;
+                    top: -4px;
+                    left: 250px;
+                    z-index: 2;
+                }
+                .numer2{
+                    @extend .numer;
+                    color: #000;
+                    left: 254px;
+                    background: #ccc;
+                }
+                .num2-tran{
+                    @extend .num-tran;
+                    border-left: 18px solid #ccc;
+                    left: 500px;
+                }
+                .num2-tran2{
+                    @extend .num-tran2;
+                    left: 500px;
+                }
+                .numer3{
+                    @extend .numer2;
+                    left: 520px;
+                }
+
+            }
+            .width540{
+                width: 540px;
+                margin-left: 80px;
+                .right-son{
+                    float: left;
+                    margin-bottom: 28px;
+                    overflow: hidden;
+                    .font{
+                        float: left;
+                        line-height: 30px;
+                        @include font(14px);
+                        span{
+                            color: red;
+                        }
+                    }
+                    .input{
+                        width: 420px;
+                        border: 1px solid #d9d9d9;
+                        border-radius: 5px;
+                        float: left;
+                        margin-right: 10px;
+                        line-height: 30px;
+                        input{
+                            width: 100%;
+                            margin-left: 8px;
+                            border: none;
+                            background: none;
+                            outline: none;
+                        }
+                        select{
+                            @include font(14px,#999);
+                            width: 100%;
+                            outline: none;
+                            border: none;
+                            background: none;
+                            option{
+                                @include font(14px,#000);
+                            }
+                        }
+                    }
+                    .text{
+                        font-family: 'iconfont';
+                    }
+                    .input.width{
+                        width: 199px;
+                    }
+                    .input.width1{
+                        width: 74px;
+                    }
+                    .mar{
+                        margin-left: 10px;
+                    }
+                    .input1{
+                        @extend .input;
+                        margin-right: 0;
+                    }
+                    span[title]{
+                        line-height: 30px;
+                        float: left;
+                        @include font(16px,#000);
+                        margin: 0 5px;
+                    }
+                }
+            }
+            .right-son.marl{
+                margin-left: 108px;
+            }
+            .step-per{
+                width: 506px;
+                float: left;
+                margin-left: 80px;
+                text-align: center;
+                .step{
+                    @include w_h_b(140px,42px,#ec6c00);
+                    @include font(16px,#fff);
+                    outline: none;
+                    border: none;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+.bottom{
+        @include w_h_b(100%,118px,#333);
+        @include font(12px,#999);
+        .bottom-son{
+            width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+            .left{
+                margin-top: 20px;
+                float: left;
+                a{
+                    @include font(12px,#999);
+                }
+                a[title]{
+                    margin-left: 20px;
+                }
+                span[title='']{
+                    @include font(12px,#999);
+                    display: block;
+                    margin-top: 10px;
+                }
+                .mar1{
+                    margin-top: 8px;
+                    img{
+                        float:left;
+                    }
+                    span{
+                        margin-left: 8px;
+                        float: left;
+                        line-height: 18px;
+                    }
+                }
+            }
+            .right{
+                margin-top: 30px;
+                float: right;
+            }
+        }
+    }

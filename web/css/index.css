@@ -1,0 +1,289 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html, body {
+  height: 100%;
+  font-family: 'Microsoft Yahei'; }
+
+a {
+  text-decoration: none; }
+
+.title {
+  width: 100%;
+  height: 68px;
+  background: #f6f6f6;
+  box-shadow: 1px 1px 2px 2px #ccc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10; }
+  .title .title-son {
+    width: 1200px;
+    margin: 0 auto; }
+    .title .title-son .logo {
+      margin-top: 10px;
+      float: left; }
+    .title .title-son .menu-per .select {
+      margin: 25px 0 0 28px;
+      float: left;
+      margin-right: 4px;
+      cursor: pointer; }
+    .title .title-son .menu-per .triangle {
+      height: 0;
+      width: 0;
+      float: left;
+      margin: 35px 23px 0 0;
+      border-top: 4px solid #ec6c00;
+      border-right: 4px solid transparent;
+      border-left: 4px solid transparent;
+      cursor: pointer; }
+    .title .title-son .menu-per .menu {
+      width: 200px;
+      position: relative;
+      left: 140px;
+      top: 68px;
+      display: none; }
+      .title .title-son .menu-per .menu .triangle1, .title .title-son .menu-per .menu .triangle2 {
+        height: 0;
+        width: 0;
+        position: absolute;
+        top: -4px;
+        left: 20px;
+        border-bottom: 5px solid #ccc;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        z-index: 1; }
+      .title .title-son .menu-per .menu .cont {
+        position: absolute;
+        top: 0;
+        height: 100px;
+        width: 200px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background: #fff; }
+      .title .title-son .menu-per .menu .triangle2 {
+        left: 22px;
+        border-bottom: 5px solid #fff;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+        z-index: 2; }
+    .title .title-son .gps {
+      line-height: 68px;
+      float: left; }
+      .title .title-son .gps a {
+        font-size: 16px;
+        color: #333;
+        margin-left: 50px; }
+    .title .title-son .gps-right {
+      line-height: 68px;
+      float: right;
+      color: #d2d2d2;
+      font-size: 18px; }
+      .title .title-son .gps-right .left {
+        float: left; }
+        .title .title-son .gps-right .left a {
+          font-size: 14px;
+          color: #333; }
+        .title .title-son .gps-right .left span {
+          text-align: center;
+          width: 30px;
+          height: 20px;
+          font-family: 'iconfont';
+          font-size: 40px;
+          color: #ec6c00;
+          display: block;
+          float: left; }
+
+.info {
+  height: 70px;
+  width: 100%; }
+
+.body {
+  width: 1200px;
+  margin: 0 auto; }
+  .body .site {
+    line-height: 53px;
+    font-size: 14px;
+    color: #666666; }
+    .body .site a {
+      font-size: 14px;
+      color: #666666; }
+  .body .con {
+    height: 638px; }
+    .body .con .left {
+      width: 258px;
+      height: 380px;
+      float: left; }
+      .body .con .left .left-son {
+        background: #f7f7f7;
+        border: 1px solid #ddd; }
+        .body .con .left .left-son h1 {
+          font-size: 14px;
+          color: #333;
+          line-height: 38px;
+          margin-left: 30px; }
+      .body .con .left .left-son1 {
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd; }
+        .body .con .left .left-son1 a {
+          display: block;
+          font-size: 14px;
+          color: #333;
+          line-height: 30px;
+          margin-left: 30px; }
+      .body .con .left .left-son1.bor {
+        border-bottom: 1px solid #ddd; }
+    .body .con .right {
+      width: 780px;
+      margin-left: 20px;
+      float: left; }
+      .body .con .right .mes {
+        width: 780px;
+        height: 36px;
+        background: #ccc;
+        margin-bottom: 34px;
+        position: relative; }
+        .body .con .right .mes .numer, .body .con .right .mes .numer2, .body .con .right .mes .numer3 {
+          line-height: 36px;
+          text-align: center;
+          width: 250px;
+          background: #ec6c00;
+          font-size: 14px;
+          color: #fff;
+          position: absolute;
+          top: 0;
+          left: 0; }
+        .body .con .right .mes .num-tran, .body .con .right .mes .num2-tran {
+          border-top: 18px solid transparent;
+          border-bottom: 18px solid transparent;
+          border-left: 18px solid #ec6c00;
+          position: absolute;
+          top: 0;
+          left: 250px;
+          z-index: 3; }
+        .body .con .right .mes .num-tran2, .body .con .right .mes .num2-tran2 {
+          border-top: 22px solid transparent;
+          border-bottom: 22px solid transparent;
+          border-left: 22px solid #fff;
+          position: absolute;
+          top: -4px;
+          left: 250px;
+          z-index: 2; }
+        .body .con .right .mes .numer2, .body .con .right .mes .numer3 {
+          color: #000;
+          left: 254px;
+          background: #ccc; }
+        .body .con .right .mes .num2-tran {
+          border-left: 18px solid #ccc;
+          left: 500px; }
+        .body .con .right .mes .num2-tran2 {
+          left: 500px; }
+        .body .con .right .mes .numer3 {
+          left: 520px; }
+      .body .con .right .width540 {
+        width: 540px;
+        margin-left: 80px; }
+        .body .con .right .width540 .right-son {
+          float: left;
+          margin-bottom: 28px;
+          overflow: hidden; }
+          .body .con .right .width540 .right-son .font {
+            float: left;
+            line-height: 30px;
+            font-size: 14px;
+            color: #333; }
+            .body .con .right .width540 .right-son .font span {
+              color: red; }
+          .body .con .right .width540 .right-son .input, .body .con .right .width540 .right-son .input1 {
+            width: 420px;
+            border: 1px solid #d9d9d9;
+            border-radius: 5px;
+            float: left;
+            margin-right: 10px;
+            line-height: 30px; }
+            .body .con .right .width540 .right-son .input input, .body .con .right .width540 .right-son .input1 input {
+              width: 100%;
+              margin-left: 8px;
+              border: none;
+              background: none;
+              outline: none; }
+            .body .con .right .width540 .right-son .input select, .body .con .right .width540 .right-son .input1 select {
+              font-size: 14px;
+              color: #999;
+              width: 100%;
+              outline: none;
+              border: none;
+              background: none; }
+              .body .con .right .width540 .right-son .input select option, .body .con .right .width540 .right-son .input1 select option {
+                font-size: 14px;
+                color: #000; }
+          .body .con .right .width540 .right-son .text {
+            font-family: 'iconfont'; }
+          .body .con .right .width540 .right-son .input.width, .body .con .right .width540 .right-son .width.input1 {
+            width: 199px; }
+          .body .con .right .width540 .right-son .input.width1, .body .con .right .width540 .right-son .width1.input1 {
+            width: 74px; }
+          .body .con .right .width540 .right-son .mar {
+            margin-left: 10px; }
+          .body .con .right .width540 .right-son .input1 {
+            margin-right: 0; }
+          .body .con .right .width540 .right-son span[title] {
+            line-height: 30px;
+            float: left;
+            font-size: 16px;
+            color: #000;
+            margin: 0 5px; }
+      .body .con .right .right-son.marl {
+        margin-left: 108px; }
+      .body .con .right .step-per {
+        width: 506px;
+        float: left;
+        margin-left: 80px;
+        text-align: center; }
+        .body .con .right .step-per .step {
+          width: 140px;
+          height: 42px;
+          background: #ec6c00;
+          font-size: 16px;
+          color: #fff;
+          outline: none;
+          border: none;
+          border-radius: 5px; }
+
+.bottom {
+  width: 100%;
+  height: 118px;
+  background: #333;
+  font-size: 12px;
+  color: #999; }
+  .bottom .bottom-son {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden; }
+    .bottom .bottom-son .left {
+      margin-top: 20px;
+      float: left; }
+      .bottom .bottom-son .left a {
+        font-size: 12px;
+        color: #999; }
+      .bottom .bottom-son .left a[title] {
+        margin-left: 20px; }
+      .bottom .bottom-son .left span[title=''] {
+        font-size: 12px;
+        color: #999;
+        display: block;
+        margin-top: 10px; }
+      .bottom .bottom-son .left .mar1 {
+        margin-top: 8px; }
+        .bottom .bottom-son .left .mar1 img {
+          float: left; }
+        .bottom .bottom-son .left .mar1 span {
+          margin-left: 8px;
+          float: left;
+          line-height: 18px; }
+    .bottom .bottom-son .right {
+      margin-top: 30px;
+      float: right; }
+
+/*# sourceMappingURL=index.css.map */
